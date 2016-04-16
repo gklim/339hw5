@@ -1,5 +1,3 @@
-package decorator;
-
 public class AbstractDecorator implements Shape{
 
 	 protected Shape decoratedShape;
@@ -8,7 +6,7 @@ public class AbstractDecorator implements Shape{
 	      this.decoratedShape = decoratedShape;
 	   }
 
-	   public void print(){
-	      decoratedShape.print();
+	   public String print(){
+	      return decoratedShape.print();
 	   }	
 }
